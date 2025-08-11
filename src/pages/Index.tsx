@@ -253,6 +253,53 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Steps */}
+          <div className="bg-white rounded-lg p-8 mt-8">
+            <h3 className="text-2xl font-bold text-black mb-8 text-center tracking-tight">
+              Этапы сотрудничества
+            </h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Шаг 1 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                  1
+                </div>
+                <h4 className="text-lg font-bold text-black mb-3">Знакомство</h4>
+                <p className="text-vshell-text text-sm">
+                  Мы с тобой познакомимся при помощи небольшой анкеты
+                </p>
+              </div>
+
+              {/* Шаг 2 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                  2
+                </div>
+                <h4 className="text-lg font-bold text-black mb-3">Получение кодов</h4>
+                <p className="text-vshell-text text-sm">
+                  Ты получишь собственную реферальную ссылку и промокод
+                </p>
+              </div>
+
+              {/* Шаг 3 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                  3
+                </div>
+                <h4 className="text-lg font-bold text-black mb-3">Творчество</h4>
+                <p className="text-vshell-text text-sm">
+                  Начинаешь творить и зарабатывать
+                </p>
+              </div>
+            </div>
+
+            {/* Стрелки между шагами */}
+            <div className="hidden md:flex justify-center items-center mt-8 space-x-8">
+              <Icon name="ArrowRight" size={24} className="text-vshell-accent" />
+              <Icon name="ArrowRight" size={24} className="text-vshell-accent" />
+            </div>
+          </div>
+
           <div className="text-center mt-12">
             <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-10 py-4 text-lg font-medium">
               Хочу зарабатывать с VSHELL
