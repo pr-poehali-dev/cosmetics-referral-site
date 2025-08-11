@@ -21,9 +21,7 @@ const Index = () => {
               <a href="#program" className="text-vshell-text hover:text-black transition-colors font-medium">Программа</a>
               <a href="#earnings" className="text-vshell-text hover:text-black transition-colors font-medium">Доходы</a>
             </nav>
-            <Button className="bg-black hover:bg-gray-800 text-white font-medium px-6">
-              Войти в кабинет
-            </Button>
+            <Button className="bg-black hover:bg-gray-800 text-white font-medium px-6">Создавать с VSHELL</Button>
           </div>
         </div>
       </header>
