@@ -149,7 +149,7 @@ const Index = () => {
                 <Icon name="DollarSign" className="h-4 w-4 text-gold" />
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-dark-brown">€2,847</div>
+                <div className="text-3xl font-bold text-dark-brown">₽284,700</div>
                 <p className="text-xs text-emerald-600 flex items-center mt-1">
                   <Icon name="TrendingUp" className="h-3 w-3 mr-1" />
                   +15.3% за месяц
@@ -194,11 +194,11 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="flex justify-between text-sm">
                   <span className="text-dark-brown/70">Серебряный партнер</span>
-                  <span className="text-dark-brown font-medium">€2,847 / €5,000</span>
+                  <span className="text-dark-brown font-medium">₽284,700 / ₽500,000</span>
                 </div>
                 <Progress value={57} className="h-3" />
                 <p className="text-sm text-dark-brown/70">
-                  До золотого уровня осталось €2,153. Следующий уровень откроет максимальную комиссию 20%
+                  До золотого уровня осталось ₽215,300. Следующий уровень откроет максимальную комиссию 20%
                 </p>
               </div>
             </CardContent>
@@ -221,22 +221,22 @@ const Index = () => {
               {
                 image: '/img/c7019870-f285-4daf-a336-941f09fcc626.jpg',
                 title: 'Luxury Gold Lipstick',
-                price: '€89',
-                commission: '€26.70',
+                price: '₽8,900',
+                commission: '₽1,335',
                 category: 'Макияж'
               },
               {
                 image: '/img/abae8870-679d-4fa4-8f71-43989b847feb.jpg',
                 title: 'Premium Serum',
-                price: '€156',
-                commission: '€46.80',
+                price: '₽15,600',
+                commission: '₽2,340',
                 category: 'Уход'
               },
               {
                 image: '/img/49d848f5-84bc-4b04-93e0-6b38ee1bd540.jpg',
                 title: 'Elite Makeup Palette',
-                price: '€234',
-                commission: '€70.20',
+                price: '₽23,400',
+                commission: '₽3,510',
                 category: 'Палетки'
               }
             ].map((product, index) => (
