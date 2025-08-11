@@ -46,7 +46,7 @@ const Index = () => {
               <div className="w-24 h-1 bg-gradient-to-r from-gold to-yellow-500 mx-auto rounded-full"></div>
             </div>
             <p className="text-xl text-dark-brown/70 mb-12 max-w-2xl mx-auto">
-              Многоуровневая система вознаграждений. Получайте до 30% от продаж и дополнительно от доходов ваших рефералов.
+              Многоуровневая система вознаграждений. Получайте до 15% от продаж и дополнительно до 5% от доходов ваших рефералов.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gold hover:bg-gold/90 text-white px-8 py-4 text-lg">
@@ -82,7 +82,7 @@ const Index = () => {
                 <CardTitle className="text-xl font-display text-dark-brown">Привлекайте клиентов</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-dark-brown/70">Делитесь персональной ссылкой и получайте 15-30% с каждой продажи</p>
+                <p className="text-dark-brown/70">Делитесь персональной ссылкой и получайте до 15% с каждой продажи</p>
               </CardContent>
             </Card>
 
@@ -94,7 +94,7 @@ const Index = () => {
                 <CardTitle className="text-xl font-display text-dark-brown">Приглашайте партнеров</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-dark-brown/70">Создавайте команду и получайте 5-15% с продаж ваших рефералов</p>
+                <p className="text-dark-brown/70">Создавайте команду и получайте до 5% с продаж ваших рефералов</p>
               </CardContent>
             </Card>
 
@@ -106,7 +106,7 @@ const Index = () => {
                 <CardTitle className="text-xl font-display text-dark-brown">Масштабируйте доходы</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-dark-brown/70">Развивайте сеть до 5 уровней и получайте пассивный доход</p>
+                <p className="text-dark-brown/70">Максимальный доход 20% (15% продажи + 5% рефералы)</p>
               </CardContent>
             </Card>
           </div>
@@ -116,21 +116,16 @@ const Index = () => {
             <h3 className="text-2xl font-display font-bold text-dark-brown mb-8 text-center">
               Структура многоуровневых вознаграждений
             </h3>
-            <div className="grid md:grid-cols-5 gap-4">
+            <div className="grid md:grid-cols-3 gap-8">
               {[
-                { level: '1 уровень', percent: '30%', desc: 'Ваши продажи' },
-                { level: '2 уровень', percent: '15%', desc: 'От рефералов' },
-                { level: '3 уровень', percent: '10%', desc: 'От команды' },
-                { level: '4 уровень', percent: '7%', desc: 'От структуры' },
-                { level: '5 уровень', percent: '5%', desc: 'От сети' }
+                { level: 'Ваши продажи', percent: '15%', desc: 'Максимум от продаж' },
+                { level: 'От рефералов', percent: '5%', desc: 'От их продаж' },
+                { level: 'Общий доход', percent: '20%', desc: 'Максимальный лимит' }
               ].map((item, index) => (
                 <div key={index} className="text-center">
                   <div className="bg-white rounded-xl p-6 border border-gold/20 mb-4">
-                    <div className="w-12 h-12 bg-gold text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">
-                      {index + 1}
-                    </div>
-                    <div className="text-2xl font-bold text-gold mb-1">{item.percent}</div>
-                    <div className="text-sm text-dark-brown font-medium">{item.level}</div>
+                    <div className="text-3xl font-bold text-gold mb-2">{item.percent}</div>
+                    <div className="text-lg text-dark-brown font-medium mb-2">{item.level}</div>
                   </div>
                   <p className="text-sm text-dark-brown/70">{item.desc}</p>
                 </div>
@@ -203,7 +198,7 @@ const Index = () => {
                 </div>
                 <Progress value={57} className="h-3" />
                 <p className="text-sm text-dark-brown/70">
-                  До золотого уровня осталось €2,153. Следующий уровень откроет комиссию 35%
+                  До золотого уровня осталось €2,153. Следующий уровень откроет максимальную комиссию 20%
                 </p>
               </div>
             </CardContent>
