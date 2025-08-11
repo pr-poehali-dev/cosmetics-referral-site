@@ -13,7 +13,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Icon name="Diamond" className="text-gold" size={32} />
-              <h1 className="text-2xl font-display font-bold text-dark-brown">BeautyLux</h1>
+              <h1 className="text-2xl font-display font-bold text-dark-brown">Vshell</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#program" className="text-dark-brown hover:text-gold transition-colors">Программа</a>
@@ -37,7 +37,7 @@ const Index = () => {
             </Badge>
             <h1 className="text-5xl md:text-7xl font-display font-bold text-dark-brown mb-8 leading-tight">
               Зарабатывайте с
-              <span className="text-gold"> BeautyLux</span>
+              <span className="text-gold"> Vshell</span>
             </h1>
             <p className="text-xl text-dark-brown/70 mb-12 max-w-2xl mx-auto">
               Многоуровневая система вознаграждений. Получайте до 30% от продаж и дополнительно от доходов ваших рефералов.
@@ -309,10 +309,10 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-6">
                 <Icon name="Diamond" className="text-gold" size={24} />
-                <h3 className="text-xl font-display font-bold">BeautyLux</h3>
+                <h3 className="text-xl font-display font-bold">Vshell</h3>
               </div>
               <p className="text-white/70 mb-4">
-                Премиальная косметика и выгодная реферальная программа
+                Премиальная косметика Vshell и выгодная реферальная программа
               </p>
               <div className="flex space-x-4">
                 <Icon name="Instagram" size={20} className="text-white/70 hover:text-gold cursor-pointer" />
@@ -342,7 +342,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-white/70">
-                <p>support@beautylux.com</p>
+                <p>support@vshell.com</p>
                 <p>+7 (495) 123-45-67</p>
                 <p>Москва, ул. Тверская, 1</p>
               </div>
@@ -350,7 +350,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/50">
-            <p>&copy; 2024 BeautyLux. Все права защищены.</p>
+            <p>&copy; 2024 Vshell. Все права защищены.</p>
           </div>
         </div>
       </footer>
