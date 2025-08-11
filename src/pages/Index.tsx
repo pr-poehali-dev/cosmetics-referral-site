@@ -19,7 +19,6 @@ const Index = () => {
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#program" className="text-vshell-text hover:text-black transition-colors font-medium">Программа</a>
-              <a href="#catalog" className="text-vshell-text hover:text-black transition-colors font-medium">Каталог</a>
               <a href="#earnings" className="text-vshell-text hover:text-black transition-colors font-medium">Доходы</a>
               <a href="#materials" className="text-vshell-text hover:text-black transition-colors font-medium">Материалы</a>
             </nav>
@@ -227,73 +226,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Product Catalog */}
-      <section id="catalog" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center tracking-tight">
-            Каталог продукции VSHELL
-          </h2>
-          <p className="text-lg text-vshell-accent mb-12 text-center max-w-2xl mx-auto">
-            Эксклюзивные продукты с высокой маржинальностью для максимального дохода
-          </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                image: '/img/c7019870-f285-4daf-a336-941f09fcc626.jpg',
-                title: 'Сыворотка для лица с коллагеном',
-                price: '₽8,900',
-                commission: '₽1,335',
-                category: 'Уход',
-                article: '2248668873'
-              },
-              {
-                image: '/img/abae8870-679d-4fa4-8f71-43989b847feb.jpg',
-                title: 'Сыворотка для лица с арбузом',
-                price: '₽15,600',
-                commission: '₽2,340',
-                category: 'Уход',
-                article: '2223893584'
-              },
-              {
-                image: '/img/49d848f5-84bc-4b04-93e0-6b38ee1bd540.jpg',
-                title: 'Сыворотка для лица с козьим молоком',
-                price: '₽23,400',
-                commission: '₽3,510',
-                category: 'Уход',
-                article: '2058578662'
-              }
-            ].map((product, index) => (
-              <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-shadow overflow-hidden bg-white">
-                <div className="aspect-square overflow-hidden bg-vshell-gray">
-                  <img 
-                    src={product.image} 
-                    alt={product.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Icon name="Heart" size={20} className="text-vshell-accent hover:text-black cursor-pointer" />
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-black mb-2">
-                    {product.title}
-                  </h3>
-                  <p className="text-sm text-vshell-accent mb-4">арт: {product.article}</p>
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-xl font-bold text-black">{product.price}</span>
-                    <span className="text-black font-medium">+{product.commission}</span>
-                  </div>
-                  <Button className="w-full bg-black hover:bg-gray-800 text-white font-medium">
-                    <Icon name="Share" size={16} className="mr-2" />
-                    Поделиться ссылкой
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Requirements & Guarantees */}
       <section className="py-20 bg-white">
