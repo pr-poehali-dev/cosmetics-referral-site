@@ -295,6 +295,62 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Requirements & Guarantees */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-16">
+            {/* Requirements */}
+            <div>
+              <h2 className="text-3xl font-bold text-black mb-8 tracking-tight">
+                Ты нам подходишь если:
+              </h2>
+              <div className="space-y-6">
+                {[
+                  'Ты умеешь снимать крутые видео и классно монтируешь',
+                  'Ты чувствуешь себя максимально комфортно перед камерами',
+                  'Ты креативный',
+                  'Ты следишь за трендами'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start space-x-4">
+                    <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Icon name="Check" size={16} className="text-white" />
+                    </div>
+                    <p className="text-lg text-vshell-text leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Guarantees */}
+            <div>
+              <h2 className="text-3xl font-bold text-black mb-8 tracking-tight">
+                Мы гарантируем:
+              </h2>
+              <div className="space-y-6">
+                {[
+                  'Доход до 500,000 рублей. Но границ нет, ты всегда можешь больше',
+                  'Перспективы развития в нашей команде',
+                  'Крутые подарки и классный продукт'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start space-x-4">
+                    <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Icon name="Star" size={16} className="text-white" />
+                    </div>
+                    <p className="text-lg text-vshell-text leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-12 py-4 text-xl font-medium">
+              Хочу зарабатывать с VSHELL
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Materials for Partners */}
       <section id="materials" className="py-20 bg-vshell-gray">
         <div className="container mx-auto px-4">
