@@ -20,7 +20,6 @@ const Index = () => {
             <nav className="hidden md:flex space-x-8">
               <a href="#program" className="text-vshell-text hover:text-black transition-colors font-medium">Программа</a>
               <a href="#earnings" className="text-vshell-text hover:text-black transition-colors font-medium">Доходы</a>
-              <a href="#materials" className="text-vshell-text hover:text-black transition-colors font-medium">Материалы</a>
             </nav>
             <Button className="bg-black hover:bg-gray-800 text-white font-medium px-6">
               Войти в кабинет
@@ -284,44 +283,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Materials for Partners */}
-      <section id="materials" className="py-20 bg-vshell-gray">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 text-center tracking-tight">
-            Материалы для партнеров
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {[
-              { icon: 'Image', title: 'Визуальные материалы', desc: 'Баннеры, карточки товаров' },
-              { icon: 'Video', title: 'Видео-обзоры', desc: 'Готовые ролики о продуктах' },
-              { icon: 'MessageSquare', title: 'Тексты для соцсетей', desc: 'Готовые посты и сторис' },
-              { icon: 'BookOpen', title: 'Обучающие материалы', desc: 'Курсы по продажам' }
-            ].map((item, index) => (
-              <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-shadow text-center bg-white">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon name={item.icon as any} size={24} className="text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-black mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-vshell-accent text-sm mb-4">{item.desc}</p>
-                  <Button variant="outline" className="border-black text-black hover:bg-black hover:text-white font-medium">
-                    Скачать
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
 
-          <div className="text-center">
-            <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-10 py-4 text-lg font-medium">
-              Хочу зарабатывать с VSHELL
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-black text-white py-16">
