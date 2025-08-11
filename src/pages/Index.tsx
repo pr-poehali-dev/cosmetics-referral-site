@@ -300,6 +300,20 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Limited Places */}
+          <div className="bg-red-600 text-white rounded-lg p-6 mt-8 text-center">
+            <div className="flex items-center justify-center mb-3">
+              <Icon name="Clock" size={24} className="mr-2" />
+              <h3 className="text-xl font-bold">Ограниченное предложение</h3>
+            </div>
+            <p className="text-lg mb-2">
+              Осталось всего <span className="font-bold text-2xl">7 мест</span> на реферальную программу
+            </p>
+            <p className="text-sm opacity-90">
+              После заполнения мест программа будет закрыта
+            </p>
+          </div>
+
           <div className="text-center mt-12">
             <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-10 py-4 text-lg font-medium">
               Хочу зарабатывать с VSHELL
