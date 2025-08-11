@@ -168,6 +168,10 @@ const Index = () => {
                   <h4 className="text-xl font-bold text-black">Промобокс</h4>
                 </div>
                 <Badge className="mb-3 bg-black text-white">ПОПУЛЯРНЫЙ</Badge>
+                <div className="bg-black text-white text-center py-2 px-4 rounded mb-4">
+                  <span className="font-bold text-lg">₽3,000</span>
+                  <span className="text-sm ml-2">первый бокс</span>
+                </div>
                 <ul className="space-y-3 text-vshell-text">
                   <li className="flex items-start">
                     <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
@@ -176,6 +180,10 @@ const Index = () => {
                   <li className="flex items-start">
                     <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
                     <span className="text-sm">Новинки до релиза</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Gift" size={16} className="text-green-600 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm"><strong>Все остальные боксы бесплатно</strong> при соблюдении условий</span>
                   </li>
                   <li className="flex items-start">
                     <Icon name="AlertTriangle" size={16} className="text-red-600 mr-2 mt-1 flex-shrink-0" />
