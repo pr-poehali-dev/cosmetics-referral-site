@@ -35,10 +35,16 @@ const Index = () => {
             <Badge className="mb-6 bg-gold/10 text-gold border-gold/20" variant="outline">
               🌟 Премиальная реферальная программа
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-dark-brown mb-8 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-display font-bold text-dark-brown mb-6 leading-tight">
               Зарабатывайте с
               <span className="text-gold"> Vshell</span>
             </h1>
+            <div className="mb-8">
+              <div className="text-3xl md:text-4xl font-bold text-gold bg-gradient-to-r from-gold via-yellow-500 to-gold bg-clip-text text-transparent mb-2 uppercase tracking-wider">
+                выкладывай контент и зарабатывай
+              </div>
+              <div className="w-24 h-1 bg-gradient-to-r from-gold to-yellow-500 mx-auto rounded-full"></div>
+            </div>
             <p className="text-xl text-dark-brown/70 mb-12 max-w-2xl mx-auto">
               Многоуровневая система вознаграждений. Получайте до 30% от продаж и дополнительно от доходов ваших рефералов.
             </p>
