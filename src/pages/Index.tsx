@@ -223,15 +223,31 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="mt-8 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-              <div className="flex items-start">
-                <Icon name="Info" size={20} className="text-yellow-600 mr-3 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-black mb-1">Важно:</p>
-                  <p className="text-vshell-text text-sm">
-                    Во всех типах сотрудничества доход зависит от активности и охвата аудитории. 
-                    Промокод – ваш идентификатор для учёта продаж.
-                  </p>
+            <div className="mt-8 space-y-4">
+              {/* Выплаты */}
+              <div className="p-4 bg-green-50 border-l-4 border-green-400 rounded">
+                <div className="flex items-start">
+                  <Icon name="CreditCard" size={20} className="text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-black mb-1">Выплаты:</p>
+                    <p className="text-vshell-text text-sm">
+                      Выплаты можно получить сразу как забрали товар покупатели, простым движением руки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Важно */}
+              <div className="p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+                <div className="flex items-start">
+                  <Icon name="Info" size={20} className="text-yellow-600 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-black mb-1">Важно:</p>
+                    <p className="text-vshell-text text-sm">
+                      Во всех типах сотрудничества доход зависит от активности и охвата аудитории. 
+                      Промокод – ваш идентификатор для учёта продаж.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
