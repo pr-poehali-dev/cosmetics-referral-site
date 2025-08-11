@@ -124,25 +124,110 @@ const Index = () => {
             </Card>
           </div>
 
-          {/* Multi-level Structure */}
+          {/* Collaboration Types */}
           <div className="bg-vshell-gray rounded-lg p-8">
             <h3 className="text-2xl font-bold text-black mb-8 text-center tracking-tight">
-              Структура вознаграждений
+              Три типа сотрудничества
             </h3>
+            
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { level: 'Ваши продажи', percent: '15%', desc: 'Максимум от продаж' },
-                { level: 'От рефералов', percent: '5%', desc: 'От их продаж' },
-                { level: 'Общий доход', percent: '20%', desc: 'Максимальный лимит' }
-              ].map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="bg-white rounded-lg p-6 shadow-sm mb-4">
-                    <div className="text-3xl font-bold text-black mb-2">{item.percent}</div>
-                    <div className="text-lg text-black font-medium mb-2">{item.level}</div>
+              {/* Самостоятельное */}
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center font-bold mr-3">
+                    1
                   </div>
-                  <p className="text-sm text-vshell-accent">{item.desc}</p>
+                  <h4 className="text-xl font-bold text-black">Самостоятельное</h4>
                 </div>
-              ))}
+                <ul className="space-y-3 text-vshell-text">
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Выбираете любой продукт VSHELL на наших площадках</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Используете <strong>личный промокод</strong> для отслеживания продаж</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Делаете видео и получаете доход с каждой покупки</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Никаких обязательств, полная свобода в контенте</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Промобокс */}
+              <div className="bg-white rounded-lg p-6 shadow-sm border-2 border-black">
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center font-bold mr-3">
+                    2
+                  </div>
+                  <h4 className="text-xl font-bold text-black">Промобокс</h4>
+                </div>
+                <Badge className="mb-3 bg-black text-white">ПОПУЛЯРНЫЙ</Badge>
+                <ul className="space-y-3 text-vshell-text">
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Подписка на ежемесячные боксы с эксклюзивными продуктами</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Новинки до релиза</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="AlertTriangle" size={16} className="text-red-600 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm"><strong>Обязательно:</strong> минимум 5 роликов в месяц с промокодом</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="X" size={16} className="text-red-600 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Не выполнили условия → следующий бокс не получите</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Партнёрство */}
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center font-bold mr-3">
+                    3
+                  </div>
+                  <h4 className="text-xl font-bold text-black">Партнёрство</h4>
+                </div>
+                <ul className="space-y-3 text-vshell-text">
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Привлекаете других авторов в VSHELL</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Они работают по <strong>вашему реферальному коду</strong></span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Вы получаете % с их продаж</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="Check" size={16} className="text-black mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Без обязательств по контенту</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+              <div className="flex items-start">
+                <Icon name="Info" size={20} className="text-yellow-600 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-black mb-1">Важно:</p>
+                  <p className="text-vshell-text text-sm">
+                    Во всех типах сотрудничества доход зависит от активности и охвата аудитории. 
+                    Промокод – ваш идентификатор для учёта продаж.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
