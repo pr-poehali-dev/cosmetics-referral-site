@@ -61,7 +61,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				gold: '#D4AF37',
+				cream: '#F8F6F3',
+				'dark-brown': '#2C1810',
+				'light-gold': '#F8F6F3'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
