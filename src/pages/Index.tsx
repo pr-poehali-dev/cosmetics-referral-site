@@ -48,10 +48,10 @@ const Index = () => {
               Многоуровневая система вознаграждений. Получайте до 15% от продаж и дополнительно до 5% от доходов ваших рефералов.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-10 py-4 text-lg font-medium" onClick={() => window.prmo?.('trackEx', {event:'NEW'})}>
+              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-10 py-4 text-lg font-medium" onClick={() => { window.prmo?.('trackEx', {event:'NEW'}); window.open('https://vshell.prmonline.ru/register', '_blank'); }}>
                 Хочу зарабатывать с VSHELL
               </Button>
-              <Button size="lg" variant="outline" className="border-black text-black hover:bg-black hover:text-white px-10 py-4 text-lg font-medium" onClick={() => window.prmo?.('trackEx', {event:'NEW'})}>
+              <Button size="lg" variant="outline" className="border-black text-black hover:bg-black hover:text-white px-10 py-4 text-lg font-medium" onClick={() => { window.prmo?.('trackEx', {event:'NEW'}); window.open('https://vshell.prmonline.ru/register', '_blank'); }}>
                 Узнать больше
               </Button>
             </div>
@@ -315,7 +315,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-10 py-4 text-lg font-medium" onClick={() => window.prmo?.('trackEx', {event:'NEW'})}>
+            <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-10 py-4 text-lg font-medium" onClick={() => { window.prmo?.('trackEx', {event:'NEW'}); window.open('https://vshell.prmonline.ru/register', '_blank'); }}>
               Хочу зарабатывать с VSHELL
             </Button>
           </div>
