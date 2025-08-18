@@ -93,7 +93,7 @@ const Index = () => {
                 <CardTitle className="text-xl font-bold text-black">Привлекайте клиентов</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="text-vshell-accent">Делитесь персональной ссылкой и получайте до 15% с каждой продажи</p>
+                <p className="text-vshell-accent">Делитесь персональным промокодом и получайте до 15% с каждой продажи</p>
               </CardContent>
             </Card>
 
