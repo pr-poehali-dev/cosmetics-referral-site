@@ -496,7 +496,7 @@ const Index = () => {
               <h4 className="font-bold mb-4">Контакты</h4>
               <div className="space-y-2 text-white/70">
                 <p>support@vshell.com</p>
-                <p>+7 (495) 123-45-67</p>
+                <p></p>
                 <p>Москва, ул. Тверская, 1</p>
               </div>
             </div>
